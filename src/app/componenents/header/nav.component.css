@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+.header{
+    overflow: hidden;
+}
+ul {
+    width: 80%;
+    margin: 5%;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #f5f6fa;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: -3px 1px 5px 1px rgba(0,0,0,0.5);
+}
+li{
+    list-style: none;
+}
+li a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #101116;
+    font-family: 'Bangers', cursive;
+    transition: .1 ease-in;
+}
+li a:hover{
+    color: #ffb438;
+}
+.header{
+    background: linear-gradient(90deg, rgb(255, 117, 43) 2%, rgb(226, 199, 100) 100%);
+    
+}
+.logo{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 39%;
+    top: 7%;
+    transform: .2s ease;
+}
+.logo:hover{
+    transform: translateY(-5px);
+}
+
+.body{
+    right: 10%;
+    bottom: 10%;
+    width: 100%;
+}
+.body img{
+    margin-right: 100px;
+    float: right;
+    width: 400px;
+    height: 400px;
+}
+h1{
+    position: absolute;
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    left: 10%;
+    bottom: 30%;
+    font-weight: bold;
+    color: #f5f6fa;
+    text-transform: capitalize;
+}
+h1 span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    color: #333333;
+    text-transform: capitalize;
+}
+.btn{
+    position:absolute;
+    display: inline;
+    padding: 12px;
+    margin: 10px;
+    bottom: 11%;
+    left: 20%;
+}
+.button{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid #f5f6fa;
+    border-radius: 10px;
+    color: #f5f6fa;
+    margin: 10px;
+    padding: 8px 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2 ease-in;
+}
+.button:hover{
+    background-color: #f5f6fa;
+    color: #ffb438;
+
+}
+.chart-btn{
+    background-color: rgb(255, 117, 43);
+}
+
+.header:before,
+.header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px; /*h/2*/
+  height: 50px; /*h*/
+  background: radial-gradient(closest-side, #fff, #fff 50%, transparent 50%);
+  background-size: 50px 50px; /*h h*/
+  background-position: 0 25px; /*0 h/2*/
+  background-repeat: repeat-x;
+}
+
+.header:after {
+  background: radial-gradient(
+    closest-side,
+    transparent,
+    transparent 50%,
+    #fff 50%
+  );
+  background-size: 50px 50px; /*h h*/
+  background-position: 25px -25px; /*h/2 -h/2*/
+  background-repeat: repeat-x;
+  bottom: -20px;
+}
+
+
